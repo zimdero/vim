@@ -16,4 +16,7 @@ to install my config you need to do this steps
 6) After installation we need to install YouCompleteMe (https://github.com/Valloric/YouCompleteMe)
    cd ~/.vim/plugged/YouCompleteMe/
    execute ./install.py
-7) Congratulations you install my vim config
+7) Now we need to make vimproc (https://github.com/shougo/vimproc.vim)
+   cd ~/.vim/plugged/vimproc.vim/
+   execute make
+8) Congratulations you install my vim config

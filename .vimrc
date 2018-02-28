@@ -27,6 +27,11 @@ Plug 'tpope/vim-surround'
 
 nnoremap <silent> <tab> :!clear;python3 %<CR>
 
+" set paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Initialize plugin system
 call plug#end()
 

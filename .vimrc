@@ -23,6 +23,7 @@ Plug 'mhinz/vim-signify'
 Plug 'moll/vim-node'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'joukevandermaas/vim-ember-hbs'
+Plug 'tpope/vim-surround'
 
 nnoremap <silent> <tab> :!clear;python3 %<CR>
 
@@ -70,6 +71,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_single_quote_import = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
 nmap <F7> :TsuImport<CR>
 
@@ -94,6 +96,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|venv|plugins|platforms|resources)|(\.(swp|ico|git|svn|pyc))$'
 "let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_max_height = 30
 
 let g:mapleader=','
 " Buffer switch

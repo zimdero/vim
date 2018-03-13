@@ -27,6 +27,11 @@ Plug 'tpope/vim-surround'
 
 nnoremap <silent> <tab> :!clear;python3 %<CR>
 
+" set tags
+set tags=./tags,tags;$HOME
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 " set paste
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>

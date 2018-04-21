@@ -15,7 +15,7 @@ Go to ho home directory ~
    https://github.com/junegunn/vim-plug </br>
    !! When you install vim-plug make sure it will be installed in ~/.vim/ path where you move my files
 4) Make .vimrc symlink </br>
-   ln -s ~/.vim/.vimrc ~.vimrc
+   ln -s ~/.vim/.vimrc ~/.vimrc
 5) Install all packages </br>
    Open vi(vim) and type :PlugInstall
 6) After installation we need to install YouCompleteMe (https://github.com/Valloric/YouCompleteMe), we have already downloaded it we need only to install localy</br>

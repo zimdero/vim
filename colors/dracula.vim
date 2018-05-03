@@ -1,0 +1,1 @@
+/home/ruslan/.vim/plugged/dracula/colors/dracula.vim

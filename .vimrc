@@ -103,7 +103,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Ctrlp ignore
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|venv|plugins|platforms|resources)|(\.(swp|ico|git|svn|pyc))$'
+let g:ctrlp_custom_ignore = '\v[\/](images|font|node_modules|target|dist|venv|plugins|platforms|resources)|(\.(swp|ico|git|svn|pyc|svg|jpg|jpeg|png|gif))$'
 "let g:ctrlp_by_filename = 1
 let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_max_height = 30

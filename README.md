@@ -49,4 +49,8 @@ Other (no idea)
    ```
   make
    ```
+* Now we need to make symlink for dracula theme </br>
+  ```
+  ln -s ~/.vim/plugged/dracula/colors/dracula.vim ~/.vim/colors/
+  ```
 ## Congratulations you install my vim config

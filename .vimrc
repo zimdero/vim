@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 "Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/nerdtree'
-Plug 'morhetz/gruvbox'
 Plug 'Valloric/YouCompleteMe'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
@@ -16,7 +15,6 @@ Plug 'mattn/emmet-vim'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 Plug 'majutsushi/tagbar'
-Plug 'fisadev/vim-isort'
 Plug 'Quramy/tsuquyomi'
 Plug 'Shougo/vimproc.vim'
 Plug 'mhinz/vim-signify'
@@ -129,13 +127,10 @@ set smarttab
 set shiftround
 
 set t_Co=256
-"gruvbox theme
-"syntax enable
-"set background=dark
-"colorscheme gruvbox 
 "dracula theme
 syntax on
 color dracula
+set termguicolors
 
 set cursorline
 set hlsearch

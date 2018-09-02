@@ -24,6 +24,8 @@ Plug 'joukevandermaas/vim-ember-hbs'
 Plug 'tpope/vim-surround'
 Plug 'mgedmin/python-imports.vim'
 Plug 'dracula/vim',{'as':'dracula'}
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'ap/vim-css-color'
 
 " Initialize plugin system
 call plug#end()
@@ -32,6 +34,10 @@ nnoremap <silent> <tab> :!clear;python3 %<CR>
 
 " Import for python
 map <F5> :ImportName<CR>
+
+" AUTOCOMPLETITION CSS
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 " set tags
 set tags=./tags,tags;$HOME
@@ -87,7 +93,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
-" NERDTree 
+" NERDTree
 "let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules']
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 let NERDTreeQuitOnOpen = 1
@@ -127,6 +133,10 @@ set smarttab
 set shiftround
 
 set t_Co=256
+"gruvbox theme
+"syntax enable
+"set background=dark
+"colorscheme gruvbox
 "dracula theme
 syntax on
 color dracula
@@ -168,7 +178,7 @@ function! WinMove(key)
         endif
         exec "wincmd ".a:key
     endif
-endfunction    
+endfunction
 
 "Отключение стрелок
 inoremap <up> <nop>

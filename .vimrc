@@ -133,10 +133,6 @@ set smarttab
 set shiftround
 
 set t_Co=256
-"gruvbox theme
-"syntax enable
-"set background=dark
-"colorscheme gruvbox
 "dracula theme
 syntax on
 color dracula

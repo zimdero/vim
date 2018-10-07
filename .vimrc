@@ -124,7 +124,7 @@ map <Leader>d :bd<Return>
 set number
 set relativenumber
 
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+"autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 set expandtab
 set tabstop=2
@@ -191,3 +191,9 @@ noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
+
+" If you prefer the Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
